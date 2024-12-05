@@ -246,6 +246,11 @@ export default function Page() {
                 >
                   with a direct question on twitter
                 </Link>{" "}
+                or send me an email at{" "}
+                <Link
+                href={`mailto:${DATA.contact.email}`}
+                className="text-blue-500 hover:underline"
+                >nikhilranjankumar1999@gmail.com</Link>
               </p>
             </div>
           </BlurFade>
