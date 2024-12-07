@@ -80,23 +80,23 @@ export const DATA = {
       location: "Pune Maharashtra India",
       title: "Frontend Developer",
       logoUrl: "/brainCells-logo.svg",
-      start: "October 2023",
+      start: "January 2023",
       end: "December 2024",
       description:
         "Developed over 30 interactive activities, including user retention and progress tracking systems, payment integration, language learning modules, and authentication features. Built scalable applications using ReactJS, Ionic Framework, and SQL. Designed robust data solutions with MongoDB to enhance performance and user engagement.",
     },
-    {
-      company: "TRIOS",
-      badges: ["Full Stack Developer"],
-      href: "https://trios.co.in/",
-      location: "Pune Maharashtra India",
-      title: "SDE Full Stack Developer",
-      logoUrl: "/TRIOS-LOGO.png",
-      start: "october 2023",
-      end: "December 2024",
-      description:
-        "As a Full Stack Developer, I led the development of Trios Plus, a cutting-edge B2B web application leveraging Next.js, achieving a 30% improvement in application speed and performance. I designed and delivered a seamless UI/UX using MUI, tailored for a leading co-working space provider, driving a 25% increase in user satisfaction and adoption rates. My contributions include building key features like dynamic invoice generation, payment handling, user management, and product registration, which streamlined operations and reduced time by 20%. I engineered rate contract and agreement functionalities, enhancing collaboration and boosting contract closure efficiency by 15%. Additionally, I deployed a robust service desk and feedback system, cutting issue resolution time by 40%, and developed a vendor management system that optimized supply chain workflows, reducing processing time by 30%. Leveraging CASL, I implemented a secure, role-based UI/UX for personalized user experiences. I also built and maintained over 100 APIs using AWS Lambda and Python, with efficient data handling through MongoDB aggregation pipelines and real-time payment updates via Razorpay webhooks. Managing cloud services with AWS SES and S3 buckets, I ensured reliable email communication and secure file storage, enhancing backend scalability and robustness.",
-    },
+    // {
+    //   company: "TRIOS",
+    //   badges: ["Full Stack Developer"],
+    //   href: "https://trios.co.in/",
+    //   location: "Pune Maharashtra India",
+    //   title: "SDE Full Stack Developer",
+    //   logoUrl: "/TRIOS-LOGO.png",
+    //   start: "october 2023",
+    //   end: "December 2024",
+    //   description:
+    //     "As a Full Stack Developer, I led the development of Trios Plus, a cutting-edge B2B web application leveraging Next.js, achieving a 30% improvement in application speed and performance. I designed and delivered a seamless UI/UX using MUI, tailored for a leading co-working space provider, driving a 25% increase in user satisfaction and adoption rates. My contributions include building key features like dynamic invoice generation, payment handling, user management, and product registration, which streamlined operations and reduced time by 20%. I engineered rate contract and agreement functionalities, enhancing collaboration and boosting contract closure efficiency by 15%. Additionally, I deployed a robust service desk and feedback system, cutting issue resolution time by 40%, and developed a vendor management system that optimized supply chain workflows, reducing processing time by 30%. Leveraging CASL, I implemented a secure, role-based UI/UX for personalized user experiences. I also built and maintained over 100 APIs using AWS Lambda and Python, with efficient data handling through MongoDB aggregation pipelines and real-time payment updates via Razorpay webhooks. Managing cloud services with AWS SES and S3 buckets, I ensured reliable email communication and secure file storage, enhancing backend scalability and robustness.",
+    // },
   ],
   education: [
     {
