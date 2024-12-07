@@ -76,9 +76,9 @@ export const DATA = {
     {
       company: "Braincells",
       href: "https://course.braincells.in/",
-      badges: ["Frontend Developer"],
+      badges: [],
       location: "Pune Maharashtra India",
-      title: "Frontend Developer",
+      title: "Full Stack Developer",
       logoUrl: "/brainCells-logo.svg",
       start: "January 2023",
       end: "December 2024",
