@@ -10,33 +10,55 @@ export const DATA = {
   description:
     "Full Stack Developer skilled in creating scalable applications with Next.js, AWS, and MongoDB, delivering exceptional user experiences.",
   summary:
-    "I am a passionate Full Stack Developer with a [Bachelor’s degree in Computer Applications from Bengaluru City University](/#education). Over the past year, I have gained hands-on experience in building scalable, high-performance applications like Trios Plus, leveraging technologies such as [Next.js, AWS, and MongoDB](/#skills). My skill set includes expertise in front-end tools like [React, Material-UI, and Tailwind CSS](/#skills), along with backend technologies such as [Node.js , Express.js and Serverless API](/#skills). With over [100 APIs](/#skills) developed and robust database solutions implemented, I have streamlined workflows, improved user satisfaction, and optimized operational processes. I am committed to delivering innovative, user-focused solutions.",
+    "Full Stack Engineer with 3.5+ years of experience building data-intensive and performance-critical web applications.Developed complex financial dashboards and real-time UI systems using modern state management and optimized rendering techniques. Improved application performance and reliability across production systems handling large-scale data.",
   avatarUrl: "/me.jpg",
   skills: [
+    // Frontend Core
     "React",
     "Next.js",
     "TypeScript",
     "JavaScript",
+    "HTML",
+    "CSS",
+
+    // UI & Styling
+    "Tailwind CSS",
+    "Material-UI",
+
+    // State Management
+    "Redux",
+    "Redux-Toolkit",
+    "Zustand",
+    "TanStack Query (React Query)",
+
+    // Data Visualization
+    "Recharts",
+    "D3.js",
+
+    // Backend
     "Node.js",
     "Express.js",
     "Python",
+    "REST APIs",
+    "JWT Authentication",
+
+    // Database
     "MongoDB",
-    "HTML",
-    "CSS",
-    "Tailwind CSS",
-    "Material-UI",
-    "Redux",
-    "Redux-Toolkit",
-    "Serverless API",
+
+    // Cloud & DevOps
     "AWS",
-    "SES (Simple Email Service)",
-    "S3 (Simple Storage Service)",
     "Lambda (Serverless Functions)",
-  ]
-  ,
-  navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
+    "S3 (Simple Storage Service)",
+    "SES (Simple Email Service)",
+    "Serverless API",
+    "Vercel",
+
+    // Testing & Tools
+    "Jest",
+    "React Testing Library",
+    "Git",
   ],
+  navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
     email: "nikhilranjankumar1999@gmail.com",
     tel: "62056666646",
@@ -74,6 +96,18 @@ export const DATA = {
 
   work: [
     {
+      company: "Neurealm",
+      href: "https://neurealm.ai/",
+      badges: ["Frontend-Focused", "Fintech", "Real-Time"],
+      location: "Pune, Maharashtra, India",
+      title: "Software Engineer",
+      logoUrl: "/neurealm.jpg",
+      start: "December 2024",
+      end: "Present",
+      description:
+        "Built frontend architecture from scratch using React, TypeScript, and Next.js for a real-time fintech trading platform (Datalign/Halo). Developed Financial Analysis Report (FAR) with Recharts/D3.js Sankey diagrams displaying Net Worth and Retirement Plans. Implemented state management using Zustand and TanStack Query, reducing API calls by 40%. Integrated AI-powered Halo Chat with context-aware assistance and Plaid Connect API for bank linking. Achieved 90% code coverage with Jest/React Testing Library and improved FCP by 35% through memoization and lazy loading. Also developed MOFSL mutual fund investment platform with SIP calculator and KYC verification.",
+    },
+    {
       company: "Braincells",
       href: "https://course.braincells.in/",
       badges: [],
@@ -85,18 +119,6 @@ export const DATA = {
       description:
         "Developed over 30 interactive activities, including user retention and progress tracking systems, payment integration, language learning modules, and authentication features. Built scalable applications using ReactJS, Ionic Framework, and SQL. Designed robust data solutions with MongoDB to enhance performance and user engagement.",
     },
-    // {
-    //   company: "TRIOS",
-    //   badges: ["Full Stack Developer"],
-    //   href: "https://trios.co.in/",
-    //   location: "Pune Maharashtra India",
-    //   title: "SDE Full Stack Developer",
-    //   logoUrl: "/TRIOS-LOGO.png",
-    //   start: "october 2023",
-    //   end: "December 2024",
-    //   description:
-    //     "As a Full Stack Developer, I led the development of Trios Plus, a cutting-edge B2B web application leveraging Next.js, achieving a 30% improvement in application speed and performance. I designed and delivered a seamless UI/UX using MUI, tailored for a leading co-working space provider, driving a 25% increase in user satisfaction and adoption rates. My contributions include building key features like dynamic invoice generation, payment handling, user management, and product registration, which streamlined operations and reduced time by 20%. I engineered rate contract and agreement functionalities, enhancing collaboration and boosting contract closure efficiency by 15%. Additionally, I deployed a robust service desk and feedback system, cutting issue resolution time by 40%, and developed a vendor management system that optimized supply chain workflows, reducing processing time by 30%. Leveraging CASL, I implemented a secure, role-based UI/UX for personalized user experiences. I also built and maintained over 100 APIs using AWS Lambda and Python, with efficient data handling through MongoDB aggregation pipelines and real-time payment updates via Razorpay webhooks. Managing cloud services with AWS SES and S3 buckets, I ensured reliable email communication and secure file storage, enhancing backend scalability and robustness.",
-    // },
   ],
   education: [
     {
@@ -126,17 +148,46 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "BillWise AI - AI-Driven Invoice Platform",
+      href: "https://billwiseai.vercel.app/",
+      dates: "2024",
+      active: true,
+      description:
+        "Built a full-stack AI-powered invoice generation platform using React, Node.js, MongoDB, and Tailwind CSS. Features natural-language invoice creation via Gemini AI integration where users input text prompts and AI intelligently structures invoice fields and calculations. Implemented AI-generated reminder emails, performance insights dashboard based on transaction analytics, real-time preview, form validation, and secure JWT authentication. Deployed on Vercel with CI/CD pipeline.",
+      technologies: [
+        "React",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "TypeScript",
+        "Tailwind CSS",
+        "Gemini AI",
+        "JWT",
+        "Vercel",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://billwiseai.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/niku-19/BillWise",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "/BillWise.mov", // Update with your actual video path
+    },
+    {
       title: "Nike e store",
       href: "nike-store-peach-zeta.vercel.app",
       dates: "Jan 2024 - Feb 2024",
       active: true,
       description:
         "This project, built with `React, Tailwind CSS, and TypeScript`, features a modern, responsive UI/UX with engaging animations. It includes an intuitive `Add to Cart` functionality, offering a seamless and visually appealing experience across all devices.",
-      technologies: [
-        "React",
-        "Typescript",
-        "TailwindCSS",
-      ],
+      technologies: ["React", "Typescript", "TailwindCSS"],
       links: [
         {
           type: "Website",
@@ -147,11 +198,10 @@ export const DATA = {
           type: "Source",
           href: "https://github.com/niku-19/nike-store.git",
           icon: <Icons.github className="size-3" />,
-        }
+        },
       ],
       image: "",
-      video:
-        "/nike.mp4",
+      video: "/nike.mp4",
     },
     {
       title: "Supersri",
@@ -170,7 +220,7 @@ export const DATA = {
         "React Icons",
         "React Slicks",
         "React Toastify",
-        "Cascading Style Sheets (CSS)"
+        "Cascading Style Sheets (CSS)",
       ],
       links: [
         {
@@ -238,7 +288,7 @@ export const DATA = {
         "Firebase",
         "React Hooks",
         "Hooks",
-        "Cascading Style Sheets (CSS)"
+        "Cascading Style Sheets (CSS)",
       ],
       links: [
         {
@@ -253,19 +303,37 @@ export const DATA = {
         },
       ],
       image: "",
-      video:
-        "/hotstar.mp4",
+      video: "/hotstar.mp4",
     },
   ],
   hackathons: [
+    {
+      title: "DATALIGN (HALO) - REAL-TIME FINTECH TRADING PLATFORM",
+      dates: "December 2024 - Present",
+      location: "Pune, Maharashtra, India",
+      description:
+        "Built frontend architecture from scratch using React, TypeScript, and Next.js, defining component patterns, folder structure, and development standards for a scalable fintech platform serving institutional and retail traders. Developed Financial Analysis Report (FAR) dashboard with real-time data visualization using Recharts and D3.js Sankey diagrams, displaying complex Net Worth, Retirement Plans, and income/expense flow for financial advisors. Implemented high-performance state management using Zustand for global client state and TanStack Query for server-state synchronization, caching, and optimistic updates, reducing API calls by 40%. Integrated AI-powered Halo Chat with context-aware inline assistance, building dynamic UI allowing users to query financial data directly within active reports using generative AI. Built responsive, accessible UI components following design system standards with Tailwind CSS, implementing OTP-based authentication flow, account onboarding, and distinct user journeys for matched/unmatched users. Integrated Plaid Connect API for real-time bank account linking and manual entry, handling loading states, error boundaries, and partial data scenarios gracefully across all components. Achieved 90% code coverage using Jest and React Testing Library, implementing unit tests, integration tests, and error boundary testing for financial calculation logic. Optimized rendering performance through React.memo, useMemo, useCallback, lazy loading routes, and code splitting, improving FCP by 35% and TTI by 28%.",
+      image: "/datalign.jpeg",
+      mlh: "",
+      links: [],
+    },
+    {
+      title: "MOTILAL OSWAL FINANCIAL SERVICES (MOFSL) - MUTUAL FUND PLATFORM",
+      dates: "December 2024 - March 2025",
+      location: "Pune, Maharashtra, India",
+      description:
+        "Developed a comprehensive, user-centric mutual fund investment platform aimed at simplifying the investment journey for both novice and experienced investors. Enabled Direct Investment Options, allowing users to bypass intermediaries and invest directly in various mutual fund schemes. Integrated crucial financial tools such as a Systematic Investment Plan (SIP) Calculator to help users project potential returns. Ensured seamless digital integration across the platform for essential account services, including end-to-end KYC Verification for quick and compliant investor onboarding, facilitated Online Account Opening processes, and implemented e-mandates functionality for recurring SIP payments. Spearheaded the development of responsive, high-performance user interfaces using React.js and Next.js, translating design specifications into functional and aesthetically pleasing components. Conducted diligent bug fixing and performance optimization to ensure consistent UX across browsers (Chrome, Safari, Firefox, Edge) and devices.",
+      image: "/motilal.jpeg",
+      mlh: "",
+      links: [],
+    },
     {
       title: "TRIOS PLUS - INVOICE GENERATOR",
       dates: "October 12 - 31, 2023",
       location: "Pune Maharashtra India",
       description:
         "developed a comprehensive invoicing system with role-based functionality to streamline the entire invoicing process. The system allows users with the appropriate organization role to create and edit invoices, ensuring full control over the invoicing workflow. It features robust tracking capabilities with customizable filters, enabling users to easily find and manage invoices. A dynamic table displays invoice data with proper pagination, while users can select addresses and GSTIN numbers for accurate billing. The application also offers the ability to view and download invoices, send them to clients, and mark payments using Razorpay. The system integrates Razorpay webhooks to automatically mark payments as paid, while also allowing the creation of receipts. This solution ensures a seamless, efficient, and secure invoicing process, tailored to different user roles within the organization.",
-      image:
-        "/TRIOS-LOGO.png",
+      image: "/TRIOS-LOGO.png",
       mlh: "",
       links: [],
     },
@@ -275,8 +343,7 @@ export const DATA = {
       location: "Pune Maharashtra India",
       description:
         "developed a web application that simplifies the process of tracking, storing, and creating agreements with companies registered on our platform. The application streamlines the agreement creation process based on pricing, timelines, and various key features. Additionally, it includes advanced status and date filters, making it easy to track agreement documents and monitor their approval status. This project enhances workflow efficiency by providing a seamless and organized way to manage agreements, ensuring timely approvals and reducing the complexity of document management.",
-      image:
-        "/TRIOS-LOGO.png",
+      image: "/TRIOS-LOGO.png",
       mlh: "",
       links: [],
     },
@@ -286,8 +353,7 @@ export const DATA = {
       location: "Pune Maharashtra India",
       description:
         "developed an advanced agreement management system that simplifies the entire agreement lifecycle. Users can easily view and download agreements, with the ability to approve them through an intuitive interface. The system also allows for document uploads, securely saving files to an AWS S3 bucket for easy access and management. Based on the approved agreements, the application automatically generates rate contracts and invoices, ensuring accurate billing and efficient workflow management. Additionally, upon agreement approval, the system automatically creates deposit invoices and rate contracts, streamlining the process and reducing manual effort. This solution ensures seamless integration between agreements, invoices, and contracts, providing a smooth and organized experience for users.",
-      image:
-        "/TRIOS-LOGO.png",
+      image: "/TRIOS-LOGO.png",
       mlh: "",
       links: [],
     },
@@ -297,8 +363,7 @@ export const DATA = {
       location: "Pune Maharashtra India",
       description:
         "developed a robust service desk system that allows users to efficiently manage and resolve service requests. Users can create and edit service requests, with the ability to view them based on specific roles, ensuring that the right individuals have access to relevant information. The system enables users to accept requests, take appropriate actions, and update the request status (e.g., mark as not an issue). To speed up resolution, requests can be assigned to specific organizational users. Additionally, the service desk includes a comment and history tracker, providing a clear record of all actions taken. The system is fully role-based, ensuring secure and tailored access across different user levels. It also supports branch bifurcation and allows users to upload request-related images to AWS S3 buckets for easy storage. Finally, once the issue is resolved, the system enables users to close the ticket, streamlining the entire support process.",
-      image:
-        "/TRIOS-LOGO.png",
+      image: "/TRIOS-LOGO.png",
       mlh: "",
       links: [],
     },
@@ -308,8 +373,7 @@ export const DATA = {
       location: "Pune Maharashtra India",
       description:
         "developed a comprehensive vendor management system to streamline the entire procurement process. The system allows users to create and approve purchase requests, ensuring that all purchases are properly authorized before proceeding. It also features robust quotation management, enabling users to review, approve, and generate purchase orders once quotations are approved. After a purchase order is created, the system facilitates payment to vendors and provides real-time tracking of payments. Additionally, it tracks the delivery of vendor supplies, allowing users to create assets when products are delivered and manage them efficiently. The asset management system enables users to track the working status of assets and provides visibility into their current allocation. The application also supports asset allocation, ensuring that assets are properly assigned to the right departments or individuals. To further enhance bulk operations, the system allows the upload of Excel files for assets and quotations, converting them into JSON format and saving them directly to the database, simplifying data entry and management.",
-      image:
-        "/TRIOS-LOGO.png",
+      image: "/TRIOS-LOGO.png",
       mlh: "",
       links: [],
     },
@@ -319,8 +383,7 @@ export const DATA = {
       location: "Pune Maharashtra India",
       description:
         "developed a comprehensive conference room booking system that allows users to seamlessly book conference rooms through our platform. Clients can make bookings, with a credit tracking system in place to manage payments. The system integrates Razorpay webhooks for secure payment processing, and credits are tracked for future invoices. A built-in calendar provides a clear overview of room bookings, making it easy to schedule and manage events. The platform also supports booking cancellations within specified time frames. For real-time visibility, a tablet view is available to display ongoing and upcoming conference events. Additionally, users can create and manage conference rooms on the platform, with the ability to edit or delete events based on the branch’s needs. This streamlined approach ensures efficient management and easy tracking of all conference room bookings.",
-      image:
-        "/TRIOS-LOGO.png",
+      image: "/TRIOS-LOGO.png",
       mlh: "",
       links: [],
     },
@@ -328,23 +391,20 @@ export const DATA = {
       title: "TRIOS PLUS - MANY MORE FEAT...",
       dates: "feb 12 - 31, 2024",
       location: "Pune Maharashtra India",
-      description:
-        "Many more...",
-      image:
-        "/TRIOS-LOGO.png",
+      description: "Many more...",
+      image: "/TRIOS-LOGO.png",
       mlh: "",
       links: [],
     },
   ],
-  learning :[
+  learning: [
     {
       title: "Next.js",
       dates: "October 2023 - December 2024",
       location: "Pune Maharashtra India",
       description:
         "Used for building a fast, scalable, and SEO-friendly front-end application.",
-      image:
-        "",
+      image: "",
       mlh: "",
       links: [],
     },
@@ -354,8 +414,7 @@ export const DATA = {
       location: "Pune Maharashtra India",
       description:
         "Designed a responsive and intuitive user interface with Material-UI components for a seamless user experience.",
-      image:
-        "",
+      image: "",
       mlh: "",
       links: [],
     },
@@ -365,8 +424,7 @@ export const DATA = {
       location: "Pune Maharashtra India",
       description:
         "Integrated Razorpay for seamless online payment processing, supporting both online and offline payments.",
-      image:
-        "",
+      image: "",
       mlh: "",
       links: [],
     },
@@ -376,8 +434,7 @@ export const DATA = {
       location: "Pune Maharashtra India",
       description:
         "Focused on designing a user-friendly interface that improves usability and enhances the overall user experience.",
-      image:
-        "",
+      image: "",
       mlh: "",
       links: [],
     },
@@ -387,8 +444,7 @@ export const DATA = {
       location: "Pune Maharashtra India",
       description:
         "Streamlined data processes by managing, storing, and processing large datasets efficiently.",
-      image:
-        "",
+      image: "",
       mlh: "",
       links: [],
     },
@@ -398,8 +454,7 @@ export const DATA = {
       location: "Pune Maharashtra India",
       description:
         "Leveraged serverless architecture to build scalable APIs and handle business logic efficiently.",
-      image:
-        "",
+      image: "",
       mlh: "",
       links: [],
     },
@@ -409,8 +464,7 @@ export const DATA = {
       location: "Pune Maharashtra India",
       description:
         "Utilized for robust and flexible database solutions, implementing complex aggregation pipelines for data handling.",
-      image:
-        "",
+      image: "",
       mlh: "",
       links: [],
     },
@@ -420,8 +474,7 @@ export const DATA = {
       location: "Pune Maharashtra India",
       description:
         "Applied in backend development, particularly for writing Lambda functions and API logic.",
-      image:
-        "",
+      image: "",
       mlh: "",
       links: [],
     },
@@ -431,8 +484,7 @@ export const DATA = {
       location: "Pune Maharashtra India",
       description:
         "Created and optimized over 100 RESTful APIs for various functionalities, ensuring high performance and security.",
-      image:
-        "",
+      image: "",
       mlh: "",
       links: [],
     },
@@ -442,8 +494,7 @@ export const DATA = {
       location: "Pune Maharashtra India",
       description:
         "Used AWS Lambda to deploy serverless functions, reducing infrastructure overhead and improving scalability.",
-      image:
-        "",
+      image: "",
       mlh: "",
       links: [],
     },
@@ -453,10 +504,9 @@ export const DATA = {
       location: "Pune Maharashtra India",
       description:
         "Integrated Razorpay webhooks to automate payment updates and manage real-time data synchronization.",
-      image:
-        "",
+      image: "",
       mlh: "",
       links: [],
     },
-  ]
+  ],
 } as const;
