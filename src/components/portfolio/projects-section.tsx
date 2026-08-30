@@ -67,7 +67,6 @@ export function ProjectsSection() {
                       sizes="(max-width: 1024px) 100vw, 50vw"
                     />
                   )}
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent lg:bg-gradient-to-r" />
                   <div className="absolute bottom-4 left-4 lg:left-auto lg:right-4">
                     <span className="label-mono text-accent">
                       {featured.domain}

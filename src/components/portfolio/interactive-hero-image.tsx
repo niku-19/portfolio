@@ -38,8 +38,10 @@ export function InteractiveHeroImage({
 
       offsetRef.current.x += (targetX - offsetRef.current.x) * 0.12;
       offsetRef.current.y += (targetY - offsetRef.current.y) * 0.12;
-      offsetRef.current.rotateX += (targetRotateX - offsetRef.current.rotateX) * 0.12;
-      offsetRef.current.rotateY += (targetRotateY - offsetRef.current.rotateY) * 0.12;
+      offsetRef.current.rotateX +=
+        (targetRotateX - offsetRef.current.rotateX) * 0.12;
+      offsetRef.current.rotateY +=
+        (targetRotateY - offsetRef.current.rotateY) * 0.12;
 
       const { x, y, rotateX, rotateY } = offsetRef.current;
       image.style.transform = `translate3d(${x}px, ${y}px, 0) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
@@ -92,13 +94,13 @@ export function InteractiveHeroImage({
         transition={{ duration: 1, ease: EASE_OUT_EXPO, delay: 0.15 }}
       >
         <div
-          className={`relative h-full w-full overflow-hidden rounded-[1.5rem] shadow-2xl transition-shadow duration-500 group-hover:shadow-[0_24px_60px_-20px_hsl(var(--primary)/0.35)] ${
+          className={`relative h-full w-full overflow-hidden rounded-[1.5rem] shadow-2xl transition-shadow bg-primary/20 duration-500 group-hover:shadow-[0_24px_60px_-20px_hsl(var(--primary)/0.35)] ${
             isDark ? "border border-primary/35" : "border border-primary/25"
           }`}
         >
-          <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-t from-background/30 via-transparent to-primary/5" />
+          <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-t from-background/40 via-transparent to-primary/5" />
           <Image
-            src="/me.jpg"
+            src="/me.png"
             alt="Nikhil Ranjan Kumar — Full-Stack Developer"
             fill
             className="object-cover object-[center_20%] transition-transform duration-700 group-hover:scale-[1.03]"
@@ -111,7 +113,7 @@ export function InteractiveHeroImage({
 
       {/* Role badge — bridges identity + image */}
       <motion.div
-        className={`absolute -bottom-3 left-1/2 z-20 -translate-x-1/2 whitespace-nowrap rounded-full px-4 py-1.5 font-mono text-[10px] uppercase tracking-[0.16em] backdrop-blur-md sm:text-[11px] ${
+        className={`absolute -bottom-3 left-1/2 z-20 -translate-x-1/2 whitespace-nowrap rounded-full px-2.5 py-1.5 font-mono text-[8px] uppercase tracking-[0.08em] backdrop-blur-md xs:px-3 xs:text-[9px] xs:tracking-[0.1em] sm:px-4 sm:text-[10px] sm:tracking-[0.16em] md:text-[11px] ${
           isDark
             ? "border border-primary/35 bg-background/85 text-primary"
             : "border border-primary/30 bg-background/90 text-primary"
@@ -135,7 +137,11 @@ export function InteractiveHeroImage({
             }`}
             initial={{ opacity: 0, x: -12 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.55 + i * 0.08, ease: EASE_OUT_EXPO }}
+            transition={{
+              duration: 0.6,
+              delay: 0.55 + i * 0.08,
+              ease: EASE_OUT_EXPO,
+            }}
           >
             {tech}
           </motion.span>

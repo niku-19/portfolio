@@ -40,7 +40,7 @@ The 3D model was:
 
 #### Features
 
-- **Source**: `/public/me.jpg` - your actual photograph
+- **Source**: `/public/me.png` - your actual photograph
 - **Aspect Ratio**: 1:1 square format (maximum visual impact)
 - **Responsive Sizing**: `max-w-sm` scales perfectly across devices
 - **Premium Presentation**: Not a plain LinkedIn-style photo
@@ -355,7 +355,7 @@ Added `interactive` and `cursor-pointer` classes to:
 
 ### Implementation
 
-- Both themes use same `me.jpg` image (photo adapts naturally)
+- Both themes use same `me.png` image (photo adapts naturally)
 - No CSS filters applied (preserves quality)
 - Theme-aware opacity values used throughout
 - Colors pulled from existing CSS variables

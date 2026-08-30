@@ -27,7 +27,7 @@ export function ExperienceSection() {
 
         <div className="mt-10 grid gap-6 sm:mt-12 sm:gap-8 lg:mt-16 lg:grid-cols-[240px_1fr] xl:grid-cols-[280px_1fr]">
           <Reveal delay={0.1}>
-            <div className="flex gap-2 overflow-x-auto pb-2 lg:flex-col lg:pb-0">
+            <div className="flex flex-wrap gap-2 overflow-x-auto pb-2 lg:flex-col lg:pb-0">
               {DATA.experience.map((job, i) => (
                 <button
                   key={job.company}
@@ -40,7 +40,9 @@ export function ExperienceSection() {
                       : "border-border bg-transparent hover:border-primary/20 hover:bg-card/50",
                   )}
                 >
-                  <p className="font-display text-xs sm:text-sm">{job.company}</p>
+                  <p className="font-display text-xs sm:text-sm">
+                    {job.company}
+                  </p>
                   <p className="label-mono mt-0.5 sm:mt-1">{job.period}</p>
                 </button>
               ))}
@@ -80,7 +82,9 @@ export function ExperienceSection() {
                       <p className="mt-1 text-sm text-primary sm:text-base">
                         {active.role}
                       </p>
-                      <p className="label-mono mt-1 sm:mt-2">{active.location}</p>
+                      <p className="label-mono mt-1 sm:mt-2">
+                        {active.location}
+                      </p>
                     </div>
                     {active.featured && (
                       <span className="w-fit rounded-md border border-primary/30 bg-primary/10 px-2.5 py-1 font-mono text-[10px] uppercase tracking-wider text-primary">
@@ -106,7 +110,9 @@ export function ExperienceSection() {
                           <h4 className="font-display text-base sm:text-lg">
                             {product.name}
                           </h4>
-                          <span className="label-mono text-accent">{product.domain}</span>
+                          <span className="label-mono text-accent">
+                            {product.domain}
+                          </span>
                         </div>
 
                         <ul className="space-y-2 sm:space-y-2.5">

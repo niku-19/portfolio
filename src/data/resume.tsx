@@ -112,7 +112,7 @@ export const DATA = {
   summary:
     "I specialize in frontend architecture, API integrations, and performance optimization for fintech and B2B products. From investor onboarding flows and real-time trading dashboards to serverless backends — I build systems where UI precision meets production reliability.",
   yearsExperience: "4",
-  avatarUrl: "/me.jpg",
+  avatarUrl: "/me.png",
   contact: {
     email: "nikhilranjankumar1999@gmail.com",
     tel: "62056666646",
@@ -296,7 +296,7 @@ export const DATA = {
         "Payment webhook reliability",
         "Large dataset filtering",
       ],
-      image: "/TRIOS-LOGO.png",
+      image: "/logo1.png",
     },
   ],
 
